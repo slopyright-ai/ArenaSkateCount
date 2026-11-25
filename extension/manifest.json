@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Arena Skate Count",
+  "version": "1.0.0",
+  "description": "Shows the registered count on DaySmart Dash sessions that have no capacity set (e.g. Public Skate), where the page leaves it out.",
+  "homepage_url": "https://github.com/slopyright-ai/ArenaSkateCount",
+  "content_scripts": [
+    {
+      "matches": ["https://apps.daysmartrecreation.com/*"],
+      "js": ["arena-skate-count.user.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
